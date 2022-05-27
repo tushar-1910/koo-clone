@@ -194,10 +194,38 @@
           ReKoo:3,
 
         },
-        
 ]
+
+
+async function loginUser(user){
+    let data =await fetch(`user_name=${username}`);
+    let info=await data.json();
+    if(info.posts.length!==0){
+        postCreator(info);
+    }
+    if (info.following.length!==0){
+        let followings=info.following;
+
+        info.following.forEach((element)=>{
+            user(elemnt);
+        });
+    }
+}
+
+async function user(username){
+    let data =await fetch(`user_name=${username}`);
+    let info=data.json();
+    if(info.posts.length!=0){
+        postCreator(info);
+    }
     
-    arr.forEach((element) => {
+}     
+
+    function postCreator(arr){
+
+        let postArr=arr.posts;
+
+        postArr.forEach((element) => {
         let postDiv=document.createElement("div");
         postDiv.setAttribute("class","postCard");
         let headingDiv=document.createElement("div");
@@ -215,17 +243,17 @@
         let headingRight=document.createElement("div");
         
         let idimageElement=document.createElement("img");
-        idimageElement.src=element.idPhoto;
+        idimageElement.src=arr.profile_picture;
         let nameElement=document.createElement("h3");
-        nameElement.innerText=element.name;
+        nameElement.innerText=arr.name;
 
         let tagElement=document.createElement("p");
-        tagElement.innerText=element.tag;
+        tagElement.innerText=arr.user_name;
         let verifiedelement=document.createElement("img");
         verifiedelement.src="https://images.kooapp.com/VerifiedAccountSheild96x96.png";
 
         let nameDiv=document.createElement("div");
-        if(element.verified){
+        if(arr.isverified){
             nameDiv.append(nameElement,verifiedelement);
         }else{
             nameDiv.append(nameElement);
@@ -245,11 +273,11 @@
         headingDiv.append(headingLeft,headingRight);
 
         let messageElement=document.createElement("p");
-         messageElement.innerText=element.message;
+         messageElement.innerText=element.caption;
         messageDiv.append(messageElement)
 
         let imageElement=document.createElement("img");
-        imageElement.src=element.photo;
+        imageElement.src=element.img_url;
 
         imageDiv.append(imageElement)
 
@@ -295,7 +323,7 @@
         commenticon.src="https://www.kooapp.com/img/Inactive-comment.svg";
         let noComments=document.createElement("p");
 
-        noComments.innerText=element.comments;
+        noComments.innerText=element.likes;
 
         commentDiv.append(commenticon,noComments);
 
@@ -304,7 +332,7 @@
         let rekooicon=document.createElement("img");
         rekooicon.src="https://www.kooapp.com/img/Rekoo1.5.svg";
         let norekoo=document.createElement("p");
-        norekoo.innerText=element.ReKoo;
+        norekoo.innerText=element.reKoos;
 
         rekooDiv.append(rekooicon,norekoo);
 
@@ -324,11 +352,8 @@
 
         postBox.append(postDiv);
 
-
-
-
-
-
     });
+    }
+    
 
 </script>
