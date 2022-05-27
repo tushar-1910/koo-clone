@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai+Looped:wght@100;200;300;400;500;600;700&family=Roboto:wght@100;300;400;500&display=swap"
+    rel="stylesheet">
+    <title>Create</title>
+    <style>
+        * {
+            /* background-color: #f8f7f3; */
+            padding: 0px;
+            margin: 0px;
+            font-family: 'Roboto', sans-serif;
+            
+        }
+        body{
+            background-color: #f8f7f3;
+        }
+        #create-cont {
+            
+            height: 100vh;
+        }
+
+        #create-main {
+            background-color: white;
+            width: 50%;
+            min-height: 60vh;
+            max-height: 90vh;
+            /* border: 1px solid red; */
+            margin: auto;
+            padding: 2%;
+            border:1px solid rgb(176, 176, 176);
+            border-radius: 7px;
+            margin-top: 4%;
+        }
+
+        #create-top {
+            width: 100%;
+            /* height: 33px; */
+            /* border: 1px solid yellow; */
+            background-color: white;
+            margin-bottom: 4%;
+            /* padding: 2%; */
+            display: flex;
+        }
+        #create-top>div {
+            /* border: 1px solid red; */
+            display: flex;
+            flex-direction: row;
+            width: 50%;
+        }
+        #create-top>div:nth-child(2){
+            /* border: 1px solid red */
+            display: flex;
+            flex-direction: row;
+            justify-content: end;
+            width: 50%;
+        }
+        #create-top>div:nth-child(2)>button{
+            /* border: 1px solid red; */
+            display: flex;
+            flex-direction: row;
+            align-items:center;
+            padding: 2%;
+            font-size: 16px;
+            /* background-color: white; */
+            font-weight: 600;
+            border: 1px solid black;
+            border-radius: 20px;
+            background-color: #f8f7f3;
+        }
+        #create-top>div>img:nth-child(2){
+            width: 10%;
+            /* border: 1px solid green; */
+            margin-left: 5%;
+        }
+
+        #create-lang {
+            width: 100%;
+            /* height: 33px; */
+            /* border: 1px solid green; */
+            background-color: white;
+            display: flex;
+            align-items: center;
+            margin-bottom: 2%;
+        }
+        #create-whatsonyourmind{
+            width: 100%;
+            height: 180px;
+            /* border: 1px solid red; */
+            background-color: white;
+            padding: 2%;
+            font-size: 16px;
+            font-weight: 500;
+            box-sizing: border-box;
+            margin-bottom: 0px;
+            border: none;
+
+        }
+        #microphone{
+            width: 100%;
+            height: 59px;
+            /* border: 1px solid blue; */
+            margin-top: 0px;
+        }
+        #inp-div{
+            width: 100%;
+            border: 1px solid rgb(176, 176, 176);
+            margin:1px;
+            border-radius: 7px;
+            padding: 2px;
+            margin-bottom: 4%;
+        }
+        #create-img-sec{
+            width: 100%;
+            border: 1px solid rgb(176, 176, 176);
+            border-radius: 7px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        #create-img-sec>img{
+            width: 5%
+        }
+        #create-img-sec>div{
+            font-size: 18px;
+            font-weight: 600; 
+        }
+        #create-lang>div:nth-child(1){
+            width: 5%;
+            font-weight: 400;
+            font-size: 24px;
+            /* border: 1px solid red; */
+            /* padding: 0.5%; */
+            text-align: center;
+            color: rgb(93, 118, 129);
+            margin-right: 5%;
+            border: 1px solid rgb(176, 176, 176);
+            border-radius: 7px;
+        }
+        #create-lang>div:nth-child(2){
+            font-weight: 400;
+            font-size: 15px;
+            text-align: center;
+            color: rgb(93, 118, 129);
+            margin-right: 5%;
+            padding: 0.5%;
+            border-bottom: 3px solid rgb(93, 118, 129);
+        }
+        #microphone{
+            display: flex;
+            justify-content: end;
+        }
+        #microphone>img{
+            width: 5%;
+        }
+        #inp-div>textarea:focus{
+            border: none;
+            outline: none;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div id="create-cont">
+        <div id="create-main">
+            <div id="crete-top-sec">
+                <div id="create-top">
+                    <div>
+                        <img src="https://www.kooapp.com/img/backArrowMinimal.svg" alt="">
+                        <img src="https://www.kooapp.com/img/profilePlaceholder.svg" alt="">
+                    </div>
+                    <div>
+                        <button><img src="	https://www.kooapp.com/img/postIconNew.svg" alt=""> POST</button>
+                        
+                    </div>
+                </div>
+                <div id="create-lang">
+                    <div id="create-plus">+</div>
+                    <div id="create-eng">English</div>
+                </div>
+                <div id="inp-div">
+                    <!-- <input type="text" id="create-whatsonyourmind" placeholder="What's on your mind..."/> -->
+                    <textarea name="create-koo" id="create-whatsonyourmind" cols="30" rows="10" placeholder="What's on your mind..."></textarea>
+                    <div id="microphone"><img src="https://www.kooapp.com/img/recordAudio.svg" alt=""></div>
+                </div>
+                <div id="create-img-sec">
+                    <img src="https://www.kooapp.com/img/createMedia-img-new.svg" alt="">
+                    <img src="https://www.kooapp.com/img/createMedia-video-new.svg" alt="">
+                    <img src="https://www.kooapp.com/img/createMedia-link-new.svg" alt="">
+                    <img src="https://www.kooapp.com/img/polls-new.svg" alt="">
+                    <div>0/500</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
