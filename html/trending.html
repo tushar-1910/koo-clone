@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai+Looped:wght@100;200;300;400;500;600;700&family=Roboto:wght@100;300;400;500&display=swap"
+        rel="stylesheet">
+    <title>Koo-Trending</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        #videos-main {
+            width: 40%;
+            /* border: 1px solid red; */
+            background-color: #f8f7f3;
+            margin: auto;
+            padding: 1%;
+        }
+
+        #videos-nav {
+            /* border: 1px solid red; */
+            display: flex;
+            justify-content: space-evenly;
+            margin: 1% 1% 4% 1%;
+        }
+
+        #videos-nav>a {
+            text-decoration: none;
+            color: rgb(93, 118, 129);
+            font-weight: 600;
+            padding: 0.6%;
+            /* border: 1px solid red; */
+            font-size: 16px;
+            margin-bottom: 5px;
+        }
+
+        #vid {
+            border-bottom: 3px solid rgb(93, 118, 129);
+            ;
+        }
+
+        #videos-writesec {
+            margin: 1% 1% 4% 1%;
+            background-color: white;
+            padding: 0.8%;
+            display: flex;
+            align-items: center;
+            border-radius: 12px;
+            border: 1px solid #e8e8e3;
+            /* border-bottom: 4%; */
+        }
+
+        #videos-writesec>img {
+            width: 25px;
+            margin: 0.5%;
+        }
+
+        #videos-writesec>input {
+            font-size: 15px;
+            width: 90%;
+            border: none;
+            margin-left: 1%;
+        }
+
+        #videos-writesec>input:focus {
+            border: none;
+            outline: none;
+        }
+
+        .videopost {
+            margin: 1% 1% 5% 1%;
+            background-color: white;
+            padding: 0.8%;
+            /* display: flex; */
+            /* flex-direction: column; */
+            /* align-items: center; */
+            border-radius: 12px;
+            border: 1px solid #e8e8e3;
+        }
+
+        .videos-post-top {
+            display: flex;
+            align-items: center;
+
+            /* border: 1px solid red; */
+            padding: 1%;
+            /* display: flex; */
+        }
+
+        .videos-post-top>div>img {
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+        }
+
+        #name {
+            padding: 3px;
+            font-weight: 600;
+            margin: 0px 0px 0px 5px;
+            font-size: 16px;
+            /* border: 1px solid red; */
+        }
+
+        #username {
+            font-weight: 600;
+            font-size: 13px;
+            /* margin-top: 3px; */
+            margin: 0px 0px 0px 5px;
+            padding: 3px;
+            /* border: 1px solid red; */
+            color: grey;
+        }
+
+        .caption {
+            padding: 1%;
+            margin-bottom: 3%;
+        }
+
+        .videos-sec-video>video {
+            width: 100%;
+            margin-bottom: 4%;
+            max-height: 400px;
+        }
+
+        .like-sec {
+            width: 97%;
+            /* padding: 2%; */
+            display: flex;
+            justify-content: space-between;
+            /* border: 1px solid red; */
+            /* margin-bottom: 3%; */
+            box-sizing: border-box;
+            cursor: pointer;
+            /* margin: auto; */
+            /* background-color: white; */
+            padding: 0.8%;
+            margin: 2% 2% 5% 2%;
+        }
+
+        .like-sec>span {
+            /* border: 1px solid red; */
+            display: flex;
+            /* width: 20%; */
+            /* justify-content: center; */
+
+        }
+
+        .like-sec>span>span {
+            font-size: 14px;
+            font-weight: 600;
+            color: rgb(93, 118, 129);
+            margin: 4%;
+            width: 50%;
+        }
+        .trending-post-img{
+            width: 100%;
+            max-height: 400px;
+        }
+        .caption{
+            font-size: 17px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="videos-main">
+        <div id="videos-nav">
+            <a href="">Feed</a>
+            <a href="">People</a>
+            <a href="" id="vid">Trending</a>
+            <a href="./videos.html">Videos</a>
+            <a href="">Polls</a>
+            <a href="">Cricket</a>
+            <a href="">Following</a>
+        </div>
+
+        <div id="videos-writesec">
+            <img src="https://www.kooapp.com/img/profilePlaceholder.svg" alt="">
+            <input type="text" id="trending-writemain-inp" placeholder="What's on your mind..." />
+            <img src="https://www.kooapp.com/img/koo_create_24.svg" id="trending-plus" alt="">
+        </div>
+
+        <div id="videos-post-section">
+            <!-- <div class="videopost">
+                <div class="videos-post-top">
+                    <div><img
+                            src="https://images.kooapp.com/transcode_input/profile1622371040009hls44.png?tr=n-dp_small"
+                            alt="" /></div>
+                    <div>
+                        <div id="name">Citti Media</div>
+                        <div id="username">@CittiMedia</div>
+                    </div>
+                </div>
+
+                <div class="caption">Our government targeted $300 billion in tax revenue in 2022, but achieved a
+                    staggering $375 billion by using technology & eradicating corruption: Rajeev Chandrasekhar, GOI | 60
+                    Second Explainer</div>
+
+                <div class="videos-sec-video">
+                    <video width="50%" height="50%" autoplay controls muted>
+                        <source src="./video.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div id="videos-writesec">
+                    <img src="https://www.kooapp.com/img/profilePlaceholder.svg" alt="">
+                    <input type="text" id="trending-writemain-inp" placeholder="Write a comment..." />
+                </div>
+            </div>
+
+
+            <div class="videopost">
+                <div class="videos-post-top">
+                    <div><img
+                            src="https://images.kooapp.com/transcode_input/profile1612678485788vc7b5.png?tr=n-dp_small"
+                            alt="" /></div>
+                    <div>
+                        <div id="name">Republic</div>
+                        <div id="username">@republic</div>
+                    </div>
+                </div>
+
+                <div class="caption">#YasinLockedForLife | This is a terror funding case. #YasinMalik is also under
+                    trial for allegedly killing 4 IAF officers. Ever since 2019 & abrogation Art 370, there’s been a
+                    progressive reduction of terrorist attacks: </div>
+
+                <div class="videos-sec-video">
+                    <video width="50%" height="50%" autoplay controls muted>
+                        <source src="./video.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div id="videos-writesec">
+                    <img src="https://www.kooapp.com/img/profilePlaceholder.svg" alt="">
+                    <input type="text" id="trending-writemain-inp" placeholder="Write a comment..." />
+                </div>
+            </div> -->
+        </div>
+        <!-- <div onclick=""></div> -->
+    </div>
+</body>
+<script>
+
+    async function getData() {
+        let res = await fetch("http://localhost:3000/trending");
+        let data = await res.json();
+        displayData(data);
+    }
+    function displayData(data) {
+        let cont = document.getElementById("videos-post-section");
+
+        data.forEach(function (user) {
+            let videopost = document.createElement("div");
+            videopost.setAttribute("class", "videopost");
+            videopost.innerHTML="";
+            //video-post-top section
+            let videos_post_top = document.createElement("div");
+            videos_post_top.setAttribute("class", "videos-post-top");
+
+            let vpt_img_div = document.createElement("div");
+            let vpt_img = document.createElement("img");
+            vpt_img.src = user.profile_picture;
+            vpt_img_div.append(vpt_img);
+
+            let vpt_name_div = document.createElement("div");
+            let vpt_name = document.createElement("div");
+            vpt_name.setAttribute("id", "name");
+            vpt_name.innerText = user.name;
+
+            let vpt_username = document.createElement("div");
+            vpt_username.setAttribute("id", "username");
+            vpt_username.innerHTML = ` @${user.user_name}`;
+
+            vpt_name_div.append(vpt_name, vpt_username);
+
+            videos_post_top.append(vpt_img_div, vpt_name_div);
+            videopost.append(videos_post_top);
+
+            //caption
+
+            let caption = document.createElement("div");
+            caption.setAttribute("class", "caption");
+            caption.innerText = user.caption;
+            videopost.append(caption);
+
+            //videos-sec
+            if (user.img_url == null) {
+                let videos_sec_video = document.createElement("div");
+                videos_sec_video.setAttribute("class","videos-sec-video");
+                videos_sec_video.innerHTML = `<video width="100%"; autoplay controls muted>
+                        <source src="./video.mp4" type="video/mp4">
+                    </video>`;
+                videopost.append(videos_sec_video);
+            }
+            else if(user.video_url == null){
+                let videos_sec_video = document.createElement("div");
+                videos_sec_video.setAttribute("class","videos-sec-video");
+                videos_sec_video.innerHTML = ` <img src=${user.img_url} class="trending-post-img" alt="">`;
+                videopost.append(videos_sec_video);
+            }
+
+            //videos_writesec
+            let videos_writesec = document.createElement("div");
+            videos_writesec.setAttribute("id", "videos-writesec");
+            let videos_writesec_img = document.createElement("img");
+            videos_writesec_img.src = "https://www.kooapp.com/img/profilePlaceholder.svg";
+            let videos_writesec_input = document.createElement("input");
+            videos_writesec_input.type = "text";
+            videos_writesec_input.setAttribute("id", "trending-writemain-inp");
+            videos_writesec_input.placeholder = "Write a comment...";
+            videos_writesec.append(videos_writesec_img, videos_writesec_input);
+            videopost.append(videos_writesec);
+
+
+            //like section
+            let like_sec = document.createElement("div");
+            like_sec.setAttribute("class", "like-sec");
+            // let img1 = document.createElement("img");
+            // img1.src = "https://www.kooapp.com/img/Like1.5.svg";
+            // let img2 = document.createElement("img");
+            // img2.src = "https://www.kooapp.com/img/Inactive-comment.svg";
+            // let img3 = document.createElement("img");
+            // img3.src = "https://www.kooapp.com/img/Rekoo1.5.svg";
+            // let img4 = document.createElement("img");
+            // img4.src = "https://www.kooapp.com/img/Whatsapp1.5.svg";
+            // let img5 = document.createElement("img");
+            // img5.src = "https://www.kooapp.com/img/Share1.5.svg";
+
+            let img1 = document.createElement("span");
+            img1.innerHTML = `<img src="https://www.kooapp.com/img/Like1.5.svg" alt="" >`;
+            img1.setAttribute("id", "like-btn");
+            img1.onclick = function () {
+                // img1.src="https://www.kooapp.com/img/Likeactive1.5.svg";
+                img1.innerHTML = `<img src="https://www.kooapp.com/img/Likeactive1.5.svg" alt="" ><span id="like-span">${user.likes}</span>`;
+            }
+
+            let img2 = document.createElement("span");
+            img2.innerHTML = `<img src="https://www.kooapp.com/img/Inactive-comment.svg" alt="">`;
+
+            let img3 = document.createElement("span");
+            img3.innerHTML = `<img src="https://www.kooapp.com/img/Rekoo1.5.svg" alt="">`;
+
+            let img4 = document.createElement("span");
+            img4.innerHTML = `<img src="https://www.kooapp.com/img/Whatsapp1.5.svg" alt="">`;
+
+            let img5 = document.createElement("span");
+            img5.innerHTML = `<img src="https://www.kooapp.com/img/Share1.5.svg" alt="">`;
+
+
+            like_sec.append(img1, img2, img3, img4, img5);
+            videopost.append(like_sec);
+            cont.append(videopost);
+        });
+
+    }
+
+    getData();
+</script>
+
+</html>

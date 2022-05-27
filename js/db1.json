@@ -1,0 +1,184 @@
+{
+    "users": [
+        {
+            "id": 1,
+            "name": "user1",
+            "phone": 9846284625,
+            "username": "user1kooo",
+            "email": "user1@email.com",
+            "password": "user@123",
+            "profile_picture": "https://www.kooapp.com/img/profilePlaceholder.svg",
+            "isverified": false,
+            "isactive": true,
+            "following":["virat.kohli","Gurudev","imbhandarkar"],
+            "posts": []
+        },
+        {
+            "id":2,
+            "name": "Virat Kohli",
+            "phone": 9846284425,
+            "user_name": "virat.kohli",
+            "email": "virat@kohli.com",
+            "password": "user123",
+            "profile_picture": "https://images.kooapp.com/transcode_input/11664193/a80d03c4-077b-4773-b454-1ee883bab2d9voke.jpg?tr=n-dp_small",
+            "isverified": true,
+            "isactive": false,
+            "following":[],
+            "posts": [
+                {
+                    "caption": "Qualifier 2 ⏳",
+                    "img_url": "https://images.kooapp.com/transcode_input/11664193/a055329d-a4f6-4e20-b7e1-ec8ea9beaa30.jpg",
+                    "video_url": null,
+                    "likes": "1.5K"
+                },
+                {
+                    "caption": "Feels ♥️\n\n#RoyalChallengersBangalore #FafDuPlessis #GlennMaxwell",
+                    "img_url": "https://images.kooapp.com/transcode_input/11664193/f8a16383-df57-4c7b-9e76-5ba24a50b111.jpg",
+                    "video_url": null,
+                    "likes": "17.5K"
+                },
+                {
+                    "caption": "✈️ Kolkata\n\n#MumbaiIndians 🤝 #RoyalChallengersBangalore",
+                    "img_url": null,
+                    "video_url": null,
+                    "likes": "12K"
+                },
+                {
+                    "caption": "Making the country proud 🇮🇳\nCongratulations Nikhat Zareen on your 🥇 win and to Manisha Moun and Parveen on winning the 🥉 at the Women’s World Boxing Championship . 👏🥊",
+                    "img_url": "https://images.kooapp.com/transcode_input/11664193/51beccca-46ca-44de-a50b-b313e7bfa63b.jpg",
+                    "video_url": null,
+                    "likes": "19K"
+                },
+                {
+                    "caption": "Patience & Belief.\n#RoyalChallengersBangalore",
+                    "img_url": "https://images.kooapp.com/transcode_input/11664193/a2bea60f-82d7-4939-b487-d633a2a70797.webp",
+                    "video_url": null,
+                    "likes": "20K"
+                },
+                {
+                    "caption": "Livin’ that PUMA life 🐈⬛\nShop the all-new one8 collection by clicking the link here 🔗👉 https://go.puma.com/zmfp\n\n#one8\n#ad",
+                    "img_url": "https://images.kooapp.com/transcode_input/11664193/a2bea60f-82d7-4939-b487-d633a2a70797.webp",
+                    "video_url": null,
+                    "likes": "20K"
+                },
+                {
+                    "caption": "A historic achievement and a massive moment for Indian badminton. Congratulations Team India on winning the Thomas Cup 🇮🇳🏆👏",
+                    "img_url": null,
+                    "video_url": null,
+                    "likes": "30K"
+                }
+            ]
+        },
+        {
+            "id":3,
+            "name": "Gurudev Sri Sri Ravi Shankar",
+            "phone": 9845284425,
+            "user_name": "Gurudev",
+            "email": "gurudev@email.com",
+            "password": "user123",
+            "profile_picture": "https://images.kooapp.com/transcode_input/5250318/62ab9661-fa52-4198-95c1-192b673b2f09voke.jpg",
+            "isverified": true,
+            "isactive": false,
+            "following":[],
+            "posts": [
+                {
+                    "caption": "Just Be!\nTrue Joy Is Going Beyond Your Identity\nReal Rest Is Going Beyond Your Desires\nMature Love Is Feeling The Oneness\nRelax & Just Be!\nEvents Are Transitory\nPickup The Wisdom And Be Free!",
+                    "img_url": "https://images.kooapp.com/transcode_input/5250318/5358C191-B8FF-4878-B8BD-2CD5EF86D5E4-image.jpeg",
+                    "video_url": null,
+                    "likes": "849"
+                },
+                {
+                    "caption": "जब कांटे खिल गए और पौधे खुद फूल बन गए……\nइसे पूरा करें",
+                    "img_url": "https://images.kooapp.com/transcode_input/5250318/74FDDEE8-7E77-45FA-B08F-7C5B04A6726B-image.jpeg",
+                    "video_url": null,
+                    "likes": "645"
+                },
+                {
+                    "caption": "Appalling to see the violence at Uvalde’s Robb Elementary School. Such heinous acts have no place in a civilized society. Rising sales of firearms is a big concern. Prayers that families of the victims find strength.",
+                    "img_url": null,
+                    "video_url": null,
+                    "likes": "1.2K"
+                },
+                {
+                    "caption": "Weird becomes cool when we celebrate differences.\nAustin joins #istandforpeace - an enchanting evening of uplifting music, wisdom and meditation in the live music capital of the world.",
+                    "img_url": "https://images.kooapp.com/transcode_input/5250318/30160DBF-AB8C-431A-9525-09EB81E26404-image.jpeg",
+                    "video_url": null,
+                    "likes": "1.9K"
+                },
+                {
+                    "caption": "Beauty of creation shines through in its diversity. Tonight thousands affirmed their commitment to peace in one of the most diverse cities of the US. Was welcomed by the Mayors of Dallas, Irving & Flower Mound.\n#ISTANDFORPEACE",
+                    "img_url": "https://images.kooapp.com/transcode_input/5250318/DB0DA6FC-BEF6-4617-A72D-1932515ED360-image.jpeg",
+                    "video_url": null,
+                    "likes": "2K"
+                },
+                {
+                    "caption": "This @ArtOfLiving meditation center in Kramatorsk, Ukraine, was built a few years back, it is now a place of respite and solace. #IStandForPeace",
+                    "img_url": "https://images.kooapp.com/transcode_input/5250318/61D2028E-5964-4863-AED2-8757FA17DBAC-image.jpeg",
+                    "video_url": null,
+                    "likes": "4K"
+                },
+                {
+                    "caption": "Legendary is the commitment that withstands humiliation. It will be one-pointed & will reach the goal.",
+                    "img_url": "https://images.kooapp.com/transcode_input/5250318/BED674E2-AA5D-436E-A54F-B359CF6884D9-image.jpeg",
+                    "video_url": null,
+                    "likes": "1.2K"
+                }
+            ]
+        },
+        {
+            "id":4,
+            "name": "Madhur Bhandarkar",
+            "phone": 9945284425,
+            "user_name": "imbhandarkar",
+            "email": "imbhandarkar@email.com",
+            "password": "user123",
+            "profile_picture": "https://images.kooapp.com/transcode_input/18371119/54BDC9B9-ECBE-4EC1-A00A-EBEA4A9ABA69-profile.jpeg?tr=n-dp_small",
+            "isverified": true,
+            "isactive": false,
+            "posts": [
+                {
+                    "caption": "It was indeed an honour  to meet Shri @manojsinha_ ji LG of J&K in Raj Bhavan, #Srinagar. He Shared wonderful vision about the Film policy, which has given new hope to the Indian film industry in #Kashmir.🎬🎥",
+                    "img_url": "https://images.kooapp.com/transcode_input/18371119/B86E542B-53F6-4B55-BF8D-0B2E4FFDF782-image.jpeg",
+                    "video_url": null,
+                    "likes": "6.2K"
+                },
+                {
+                    "caption": "#Kashmir  #srinagar @incredibleindia 🇮🇳",
+                    "img_url": "https://images.kooapp.com/transcode_input/18371119/86C8B577-A407-4ECD-8F80-97FA517FFAF8-image.jpeg",
+                    "video_url": null,
+                    "likes": "659"
+                },
+                {
+                    "caption": "Today Siddhivinayak temple  Darshan. 💐 🙏 गणपति बप्पा मोरिया. 🙏 #Mumbai",
+                    "img_url": "https://images.kooapp.com/transcode_input/18371119/EE45CAA8-1219-4343-88A4-6703A4748D59-image.jpeg",
+                    "video_url": null,
+                    "likes": "900"
+                },
+                {
+                    "caption": "Wrap up party of film #BabliBouncer with actors& technicians in #mumbai. #TAMANNAAH      #BabliBouncer  @foxstarhindi @JungleePictures",
+                    "img_url": "https://images.kooapp.com/transcode_input/18371119/C3780EBE-C316-44AD-9A06-503CD0B6F6FA-image.jpeg",
+                    "video_url": null,
+                    "likes": "1K"
+                },
+                {
+                    "caption": "Your memories will always keep me energize & smiling.  Miss you mom.🤗 #HappyMothersDay ❤️🙏",
+                    "img_url": "https://images.kooapp.com/transcode_input/18371119/58542B6B-5C3A-4E7D-B97A-68DAE0288BF6-image.jpeg",
+                    "video_url": null,
+                    "likes": "2.9K"
+                },
+                {
+                    "caption": "Had a great time watching movie at METRO INOX  @inoxmovies , Cheers to the entire INOX team and the visionary @JainSiddharth_ for the Insignia experience.🎞👌\nThanks Gaurav Chopra (Unit Manager INOX Metro) & Ravi More (General Manager) for the hospitality.  📽🎭🙏",
+                    "img_url": "https://images.kooapp.com/transcode_input/18371119/98946099-E35D-464D-95D0-F4C64DE58E80-image.jpeg",
+                    "video_url": null,
+                    "likes": "679"
+                },
+                {
+                    "caption": "Last schedule of@foxstarm. starts and I had my favourite #MumbaiVadapav with #BabliBouncer,#TAMANNAHBHATIA  to begin my shooting day.  🎥🎬\n#FoxStarStudios @foxstarhindi @JungleePictures",
+                    "img_url": "https://images.kooapp.com/transcode_input/18371119/E2805B2F-D63E-44B1-BEF6-FA6FC1DA9473-image.jpeg",
+                    "video_url": null,
+                    "likes": "1K"
+                }
+            ]
+        }
+    ]
+}
