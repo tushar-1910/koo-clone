@@ -176,7 +176,7 @@
                         <img src="https://www.kooapp.com/img/profilePlaceholder.svg" alt="">
                     </div>
                     <div>
-                        <button><img src="	https://www.kooapp.com/img/postIconNew.svg" alt=""> POST</button>
+                        <button id="create-post-btn"><img src="	https://www.kooapp.com/img/postIconNew.svg" alt=""> POST</button>
                         
                     </div>
                 </div>
@@ -200,5 +200,16 @@
         </div>
     </div>
 </body>
-
+<script>
+    document.querySelector("#create-post-btn").addEventListener("click",function(){
+        event.preventDefault();
+        let inp = document.getElementById("create-whatsonyourmind").value;
+        if(inp == ""){
+            alert("Can't Post Without Text");
+        }
+        else{
+            console.log(inp);
+        }
+    })
+</script>
 </html>
