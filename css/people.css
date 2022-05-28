@@ -13,6 +13,109 @@ body
     text-align: left;
 
 }
+
+.left-header
+{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0 0;
+    font-size: 18px;
+    background: #fff;
+    align-items: flex-end;
+    width: 448px;
+    padding: 12px 25px 12px 40px;
+    
+    
+}
+._3sp-w
+{
+    padding: 0!important;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 32px;
+    margin-top: 2rem;
+    margin-bottom: 16px;
+    margin-bottom: 1rem;
+}
+._28TS7
+{
+    list-style-type: none;
+    padding: 12px 24px 12px 20px;
+    border-radius: 50px;
+    color: #f5f5f5;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-weight: 600;
+}
+._1o3h5
+{
+    display:flex;
+    height: 20px;
+}
+.option-name
+{
+    font-size: 18px;
+    margin: 10px;
+    padding-right: 2px;
+    font-weight: bolder;
+    font-family: Roboto,sans-serif;
+
+}
+.option
+{
+    background: transparent;
+    border: none;
+    display: flex;
+    align-items: center;
+    border-radius: 50px;
+}
+.option:hover
+{
+    background: #eff2f3;
+
+}
+
+.title:hover
+{
+    background: #eff2f3;
+    border-radius: 50px;
+}
+.koo
+{
+    background: #5d7681;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #759295;
+    padding: 8px;
+    width: 150px;
+    place-content: center;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 18px;
+
+}
+.signin
+{
+    background: #5d7681;
+    width: 150px;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 50px;
+    border: 1px solid #759295;
+    color: #fff;
+    padding: 8px;
+    place-content: center;
+    margin-top: 200px;
+    font-size: 18px;
+}
+.signin:hover,.koo:hover
+{
+    background-color: #97aeaf;
+}
 .middle
 {
     background: #f8f7f3;
@@ -172,10 +275,134 @@ body
 {
     background: rgb(255, 255, 255);
     color: rgb(117, 146, 149);
+    border: 1px solid #759295;
+    border-radius: 20px;
+    padding: 7px 16px 5px;
+    margin-top: 0.5em;
+    font-weight: 600;
+    margin-bottom: 0.5em;
+    white-space: nowrap;
+    text-align: center;
+    overflow: hidden;
+    cursor: pointer;
+
 }
 .div3
 {
     padding: 0.1em 13px 0 0.2em;
     flex-grow: 1;
     text-align: center;
+}
+#container{
+    width: 30%;
+    overflow: hidden;
+    float: right;
+    position: fixed;
+    margin-top: -865px;
+    margin-left: 1080px;
+}
+#inputDiv{
+    width: 75%;
+    box-sizing: border-box;
+    padding: 10px;
+    background-color: #f8f7f3;
+    margin: 30px 0px 30px 20px;
+    border-radius: 24px;
+    border: 1px solid #eee;
+    /* box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px; */
+    display: flex;
+    justify-content: space-between;
+}
+#inputDiv img{
+    width: 30px;
+}
+#inputDiv input{
+    background-color: #f8f7f3;
+    border: none;
+}
+#trendingTags{
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif !important;
+    padding: 10px;
+    background-color: #f8f7f3;
+    margin: 30px 0px 0px 20px;
+    border-radius: 12px;
+    border: 1px solid #eee;
+    /* box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px; */
+    padding-left: 0px;
+    padding-right: 0px;
+
+}
+.tags{
+    display: flex;
+    justify-content: space-between;
+    border: 0.5px solid #eee;
+    padding: 0px;
+    font-family: 'Roboto', sans-serif !important;
+    margin: 0px;
+    align-items: center;
+    
+}
+.tags button{
+    width: 30px;
+    height: 30px;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif !important;
+    margin: 10px;
+   
+}
+.tags div{
+    display: flex;
+    flex-direction: column;
+    
+}
+.tags div div {
+    flex-direction: row;
+    margin: 0px 0px 15px 15px;
+    
+
+}
+.tags h2{
+    margin: 10px;
+    
+}
+.tags h4{
+    margin-bottom:5px;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif !important;
+   margin-left: 20px;
+   color:#1e63bd;
+}
+.tags div div  img{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin: 0px;
+}    
+#viewMore{
+    display: flex;
+    color:#1e63bd;
+    justify-content: space-between;
+    margin-left: 30px;
+    margin-top: 0px;
+    font-family: 'Roboto', sans-serif !important;
+    margin-right: 25%;
+    font-size: 16px;
+}  
+#navContents{
+    margin-left: 30px;
+    display: grid;
+    width: 75%;
+    grid-template-columns: repeat(4,1fr);
+    color: rgb(177, 180, 180);
+    font-family: 'Roboto', sans-serif !important;
+    font-size: 16px;
+}  
+
+#navContents>p
+{
+    font-size: 16px;
 }

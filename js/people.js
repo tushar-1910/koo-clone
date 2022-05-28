@@ -121,6 +121,12 @@ profiles.forEach(user => {
             follow.innerText = "Following";
             follow.setAttribute('class','afterfollow');
         }
+        else if(follow.value == 'true')
+        {
+            follow.value = false;
+            follow.innerText = "+Follow";
+            follow.setAttribute('class','follow');
+        }
     })
     div3.append(follow);
 
